@@ -1,10 +1,11 @@
-# This configuration is solely focused on only the configuration of the k8s multinode cluster using ansible on the pre-launched ec2 instances.
+# Xonfiguration of the k8s multinode cluster using ansible on the pre-launched ec2 instances.
 
-## Only Prerequisite is in your AWS account, EC2 instances must be already launched.
-### I have used Red Hat Enterprise Linux 9 (HVM), SSD Volume Type -- Free Tier Eligible
-Configure the ansible inventory file, and ansible.cfg file with the necessary details and you are good to go.
+## The Only Prerequisite is in your AWS account, EC2 instances must be already launched.
+### Recommended to use Red Hat Enterprise Linux 9 (HVM), SSD Volume Type -- Free Tier Eligible
 
-**First run rhel_common.yaml and then rhel_master.yaml**
+Please Configure the Ansible inventory file and ansible.cfg file with the necessary details and you are good to go.
+
+**First execute rhel_common.yaml and then rhel_master.yaml**
 
 
 ## Happy Ansible Automating!! 😊
