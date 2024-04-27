@@ -1,4 +1,4 @@
-# Xonfiguration of the k8s multinode cluster using ansible on the pre-launched ec2 instances.
+## Configuration of the k8s multinode cluster using ansible on the pre-launched ec2 instances.
 
 ## The Only Prerequisite is in your AWS account, EC2 instances must be already launched.
 ### Recommended to use Red Hat Enterprise Linux 9 (HVM), SSD Volume Type -- Free Tier Eligible
