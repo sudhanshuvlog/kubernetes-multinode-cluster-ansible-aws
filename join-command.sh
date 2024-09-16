@@ -1,0 +1,1 @@
+kubeadm join 172.31.36.203:6443 --token u828sg.go92tk37olm78sxc --discovery-token-ca-cert-hash sha256:c5ba955dd0112f34dd671dcafd5dfb7570b6c52cc0561c05fd6d87f97dcacf2e
