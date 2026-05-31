@@ -4,6 +4,7 @@
 
   vars:
     kubernetes_version: "v1.36"
+    crio_version: "v1.32"
     pod_cidr: "192.168.0.0/16"
     packages:
       - iproute-tc
@@ -69,11 +70,11 @@
 
     - name: Install CRI-O repo
       shell: |
-        curl -L https://pkgs.k8s.io/addons:/cri-o:/stable:/{{ kubernetes_version }}/rpm/repodata/repomd.xml.key | tee /etc/pki/rpm-gpg/RPM-GPG-KEY-crio
+        curl -L https://pkgs.k8s.io/addons:/cri-o:/stable:/{{ crio_version }}/rpm/repodata/repomd.xml.key | tee /etc/pki/rpm-gpg/RPM-GPG-KEY-crio
         cat <<EOF >/etc/yum.repos.d/crio.repo
         [cri-o]
         name=CRI-O
-        baseurl=https://pkgs.k8s.io/addons:/cri-o:/stable:/{{ kubernetes_version }}/rpm/
+        baseurl=https://pkgs.k8s.io/addons:/cri-o:/stable:/{{ crio_version }}/rpm/
         enabled=1
         gpgcheck=1
         gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-crio
