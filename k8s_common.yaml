@@ -14,7 +14,7 @@
   tasks:
     - name: Disable swap
       command: swapoff -a
-
+      
     - name: Add swapoff to crontab for reboot
       cron:
         name: "Ensure swapoff -a runs at reboot"
@@ -96,18 +96,18 @@
           gpgcheck=1
           gpgkey=https://pkgs.k8s.io/core:/stable:/{{ kubernetes_version }}/rpm/repodata/repomd.xml.key
 
-    - name: Install CRI-O repo
-      ansible.builtin.yum_repository:
-        name: cri-o
-        description: CRI-O
-        baseurl: "https://download.opensuse.org/repositories/isv:/cri-o:/stable:/v1.37/rpm/x86_64/"
-        enabled: true
-        gpgcheck: false
-        gpgkey: "https://download.opensuse.org/repositories/isv:/cri-o:/stable:/v1.37/rpm/repodata/repomd.xml.key"
-        state: present
+    #- name: Install CRI-O repo
+    #  ansible.builtin.yum_repository:
+    #    name: cri-o
+    #    description: CRI-O
+    #    baseurl: "https://download.opensuse.org/repositories/isv:/cri-o:/stable:/v1.37/rpm/x86_64/"
+    #    enabled: true
+        #gpgcheck: false
+        #gpgkey: "https://download.opensuse.org/repositories/isv:/cri-o:/stable:/v1.37/rpm/repodata/repomd.xml.key"
+    #    state: present
 
-    # - command: curl -LO https://download.opensuse.org/repositories/isv:/cri-o:/stable:/v1.37/rpm/x86_64/cri-o-1.37.0-150500.1.1.x86_64.rpm
-    # - command: dnf install -y cri-o-1.37.0-150500.1.1.x86_64.rpm
+    - command: curl -LO https://download.opensuse.org/repositories/isv:/cri-o:/stable:/v1.37/rpm/x86_64/cri-o-1.37.0-150500.1.1.x86_64.rpm
+    - command: dnf install -y cri-o-1.37.0-150500.1.1.x86_64.rpm
 
     - name: Install Kubernetes
       dnf:

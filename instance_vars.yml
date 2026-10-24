@@ -4,5 +4,5 @@ aws_image: "ami-0011550b539717e2a" #rhel-10 aws AMI
 count: 3 #one master, 2 slave configuration
 subnet: subnet-04c1ed6ba9c55ffd7
 security_group: default
-key_pair: testket24
-name: K8sCluster
+key_pair: ansible-gfg-48-prac
+name: K8sMultiNodeCluster

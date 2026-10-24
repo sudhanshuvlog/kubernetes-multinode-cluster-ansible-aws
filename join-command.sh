@@ -1,1 +1,1 @@
-kubeadm join 172.31.36.203:6443 --token u828sg.go92tk37olm78sxc --discovery-token-ca-cert-hash sha256:c5ba955dd0112f34dd671dcafd5dfb7570b6c52cc0561c05fd6d87f97dcacf2e
+kubeadm join 172.31.0.70:6443 --token v4anp6.gps59zoffjhf654x --discovery-token-ca-cert-hash sha256:b8b247b853c9f7f93f36a8a91554174c5c08b95b277310e12edca4b921fca818
