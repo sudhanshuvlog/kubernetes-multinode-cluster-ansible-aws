@@ -56,12 +56,6 @@
       ansible.builtin.debug:
         var: running_kernel.stdout
 
-    - name: Load br_netfilter
-      community.general.modprobe:
-        name: br_netfilter
-        state: present
-      become: true
-
     - name: Load kernel modules
       modprobe:
         name: "{{ item }}"
