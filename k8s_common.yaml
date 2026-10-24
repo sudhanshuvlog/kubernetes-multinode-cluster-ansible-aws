@@ -62,12 +62,6 @@
         state: present
       become: true
 
-    - name: Load br_netfilter module
-      community.general.modprobe:
-        name: br_netfilter
-        state: present
-      become: true
-
     - name: Load kernel modules
       modprobe:
         name: "{{ item }}"
