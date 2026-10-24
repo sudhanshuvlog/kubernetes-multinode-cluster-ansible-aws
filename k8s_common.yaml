@@ -102,7 +102,7 @@
         description: CRI-O
         baseurl: "https://download.opensuse.org/repositories/isv:/cri-o:/stable:/v1.37/rpm/x86_64/"
         enabled: true
-        gpgcheck: true
+        gpgcheck: false
         gpgkey: "https://download.opensuse.org/repositories/isv:/cri-o:/stable:/v1.37/rpm/repodata/repomd.xml.key"
         state: present
 
