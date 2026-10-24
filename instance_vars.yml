@@ -1,8 +1,8 @@
 aws_region: ap-south-1
 instance_type: t2.medium
-aws_image: "ami-022ce6f32988af5fa" #rhel-9 aws AMI
+aws_image: "ami-0011550b539717e2a" #rhel-10 aws AMI
 count: 3 #one master, 2 slave configuration
 subnet: subnet-04c1ed6ba9c55ffd7
 security_group: default
-key_pair: keypair-30may
+key_pair: testket24
 name: K8sCluster

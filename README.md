@@ -2,7 +2,7 @@
 
 ![ArchitectureDiagramK8s](ArchitectureDiagram.jpg)
 
-This repository contains Ansible playbooks to provision a **production-ready Kubernetes cluster** using **kubeadm**, **CRI-O**, and **Calico**, aligned with the **latest stable Kubernetes version (v1.30)**.
+This repository contains Ansible playbooks to provision a **production-ready Kubernetes cluster** using **kubeadm**, **CRI-O**, and **Calico**, aligned with the **latest stable Kubernetes version (v1.36)**.
 
 The setup is **idempotent**, meaning the playbooks can be safely re-applied without breaking an existing cluster.
 
@@ -10,7 +10,7 @@ The setup is **idempotent**, meaning the playbooks can be safely re-applied with
 
 ## Features
 
-* Kubernetes **v1.30** (official packages)
+* Kubernetes **v1.36** (official packages)
 * **CRI-O** as the container runtime (version-matched with Kubernetes)
 * **Calico** CNI (official manifest)
 
@@ -54,8 +54,8 @@ The setup is **idempotent**, meaning the playbooks can be safely re-applied with
 
 | Component  | Version        |
 | ---------- | -------------- |
-| Kubernetes | v1.30          |
-| CRI-O      | v1.30          |
+| Kubernetes | v1.36          |
+| CRI-O      | v1.307         |
 | CNI        | Calico v3.27.x |
 
 All components are installed from **official repositories**.
